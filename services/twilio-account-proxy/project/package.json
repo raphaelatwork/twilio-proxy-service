@@ -1,0 +1,27 @@
+{
+  "name": "twilio-account-proxy",
+  "version": "1.0.0",
+  "description": "Proxy service to manipulate Twilio accounts and subaccounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twilio",
+    "proxy",
+    "account"
+  ],
+  "author": "Raphael Osorio",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "jest": "^27.0.6",
+    "twilio": "^3.66.1"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.24",
+    "supertest": "^6.1.4",
+    "ts-jest": "^27.0.4"
+  }
+}
