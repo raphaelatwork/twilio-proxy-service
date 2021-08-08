@@ -4,7 +4,9 @@
   "description": "Proxy service to manipulate Twilio accounts and subaccounts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "lint": "eslint . --ext .ts,.json",
+    "test": "jest"
   },
   "keywords": [
     "twilio",
@@ -14,14 +16,22 @@
   "author": "Raphael Osorio",
   "license": "ISC",
   "dependencies": {
+    "@airtasker/spot": "^1.9.0",
     "dotenv": "^10.0.0",
     "jest": "^27.0.6",
     "twilio": "^3.66.1"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
     "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
     "supertest": "^6.1.4",
     "ts-jest": "^27.0.4"
-  }
+  },
+  "repository": "https://github.com/rosori01/Holly",
+  "private": true,
+  "type": "module"
 }

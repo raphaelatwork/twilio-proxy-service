@@ -4,11 +4,13 @@
   ],
   "include": [
     "./src"
-  ],
+, "src/twilioClient/prismClient2.js", "index.js"  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
-    "experimentalDecorators": true
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   }
 }
