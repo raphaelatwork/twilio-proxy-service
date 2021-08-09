@@ -21,7 +21,4 @@ npm install -g yarn
 yarn global add @stoplight/prism-cli
 
 #Add yarn binaries to PATH
-source "$HOME/.bashrc"
-if [[$PATH != *"~/.yarn/bin/"* ]]; then 
-  echo "PATH=\"$PATH:$(yarn global bin)\"" >> "$HOME/.bash_profile"
-fi
+echo "PATH=\"$PATH:$(yarn global bin)\"" >> "$HOME/.bash_profile"
