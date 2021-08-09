@@ -19,3 +19,14 @@ npm install -g yarn
 
 #Install Prism - Used to run mock server
 yarn global add @stoplight/prism-cli
+
+#Add yarn binaries to PATH
+# echo $PATH
+# echo $HOME
+# source "$HOME/.bashrc"
+echo $(yarn global bin)
+# export PATH="$PATH:$(yarn global bin)"
+# echo $PATH
+# if [[$PATH != *"~/.yarn/bin/"* ]]; then 
+  echo "PATH=\"$PATH:$(yarn global bin)\"" >> "$HOME/.bash_profile"
+# fi
