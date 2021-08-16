@@ -1,0 +1,38 @@
+{
+  "post": {
+    "description": "Returns a new subaccount under the account provided",
+    "responses": {
+      "201": {
+        "description": "Successfully created a new subaccount",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../schemas/Subaccount.json"
+            }
+          }
+        }
+      }
+    },
+    "parameters": [
+      {
+        "name": "accountSid",
+        "in": "path",
+        "description": "A parent account which may have an arbitraty number of subaccounts.",
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple",
+        "required": true
+      }
+    ],
+    "requestBody": {
+      "content": {
+        "application/x-www-form-urlencoded": {
+          "schema": {
+            "$ref": "../schemas/CreateSubaccount.json"
+          }
+        }
+      }
+    }
+  }
+}

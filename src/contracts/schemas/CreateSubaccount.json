@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "friendlyName": {
+      "type": "string"
+    },
+    "accountSid": {
+      "type": "string"
+    }
+  },
+  "required": ["friendlyName", "accountSid"]
+}

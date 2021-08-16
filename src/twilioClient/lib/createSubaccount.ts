@@ -1,7 +1,7 @@
-// createSubAccount.ts
+// createSubaccount.ts
 import {Twilio} from 'twilio';
 import RequestClient from 'twilio/lib/base/RequestClient';
-import {AccountInstance, AccountResource}
+import {AccountInstance}
   from 'twilio/lib/rest/api/v2010/account';
 
 /**
@@ -13,23 +13,17 @@ import {AccountInstance, AccountResource}
  * @param {string} parentAccountApiSecret api secret for parent account
  * @return {AccountInstance|AccountResource} describes the newly created subAccount
  */
-async function createSubAccount(
+export default async (
     friendlyName: string
     , parentAccountSid: string
     , httpClient: RequestClient
     , parentAccountApiKey: string
-    , parentAccountApiSecret: string): Promise<AccountResource|AccountInstance> {
+    , parentAccountApiSecret: string): Promise<AccountInstance> => {
   const clientOptions: Twilio.TwilioClientOptions = {
     accountSid: parentAccountSid,
     httpClient,
   };
-  try {
-    const client = new Twilio(parentAccountApiKey, parentAccountApiSecret, clientOptions);
-    const account = await client.api.accounts.create({friendlyName});
-    return account;
-  } catch (err) {
-    // TODO: log error
-  }
-}
-
-export default createSubAccount;
+  const client = new Twilio(parentAccountApiKey, parentAccountApiSecret, clientOptions);
+  const account = await client.api.accounts.create({friendlyName});
+  return account;
+};

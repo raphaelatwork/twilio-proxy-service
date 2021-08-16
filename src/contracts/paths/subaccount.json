@@ -1,0 +1,37 @@
+{
+  "get": {
+    "description": "Returns the subaccount corresponding to the accountSid and subaccountSid provided",
+    "responses": {
+      "200": {
+        "description": "Successfully returned subaccount",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../schemas/Subaccount.json"
+            }
+          }
+        }
+      }
+    },
+    "parameters": [
+      {
+        "name": "accountSid",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      },
+      {
+        "name": "subaccountSid",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      }
+    ]
+  }
+}

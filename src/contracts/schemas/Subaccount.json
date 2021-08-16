@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "sid": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "friendlyName": {
+      "type": "string"
+    },
+    "parentAccountSid": {
+      "type": "string"
+    },
+    "dateTimeCreated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

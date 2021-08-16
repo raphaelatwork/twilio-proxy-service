@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Twilio Account Proxy Service",
+    "description": "A proxy service to create and manage subaccounts on the Twilio platform.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/account/{accountSid}/subAccounts.json": {
+      "$ref": "./paths/subaccounts.json"
+    },
+    "/account/{accountSid}/subAccounts/createSubaccount.json": {
+      "$ref": "./paths/createSubaccount.json"
+    },
+    "/account/{accountSid}/subaccounts/{subaccountSid}.json": {
+      "$ref": "./paths/subaccount.json"
+    }
+  },
+  "components": {
+    "schemas": {
+      "$ref": "./schemas/index.json"
+    }
+  }
+}

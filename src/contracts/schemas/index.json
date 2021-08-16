@@ -1,0 +1,8 @@
+{
+  "Subaccount": {
+    "$ref": "./Subaccount.json"
+  },
+  "CreateSubaccount": {
+    "$ref": "./CreateSubaccount.json"
+  }
+}

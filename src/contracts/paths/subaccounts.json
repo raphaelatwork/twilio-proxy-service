@@ -1,0 +1,33 @@
+{
+  "get": {
+    "description": "Returns all subaccounts pertaining to account provided",
+    "responses": {
+      "200": {
+        "description": "A list of subaccounts",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "../schemas/Subaccount.json"
+              }
+            }
+          }
+        }
+      }
+    },
+    "parameters": [
+      {
+        "name": "accountSid",
+        "in": "path",
+        "required": true,
+        "description": "A parent account which may have an arbitraty number of subaccounts.",
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      }
+    ]
+  }
+}

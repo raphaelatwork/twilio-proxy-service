@@ -1,18 +1,19 @@
-// prismClient.ts
+// requestClientWrapper.ts
 import RequestClient from 'twilio/lib/base/RequestClient';
+
 /**
  * TODO: annotate class
  */
-class PrismClient {
-  prismUrl: string;
+class RequestClientWrapper {
+  url: string;
   requestClient: RequestClient;
   /**
    * Prism Client Constructor
-   * @param {string} prismUrl endpoint url for prism instance
+   * @param {string} url endpoint url for prism instance
    * @param {RequestClient} requestClient implements Twilio RequestClient class definition
    */
-  constructor(prismUrl: string, requestClient: RequestClient) {
-    this.prismUrl = prismUrl;
+  constructor(url: string, requestClient: RequestClient) {
+    this.url = url;
     this.requestClient = requestClient;
   }
   /**
@@ -22,8 +23,8 @@ class PrismClient {
    * @return {Promise<any>}
    */
   request(opts: RequestClient.RequestOptions) {
-    opts.uri = opts.uri.replace(/^https\:\/\/.*?\.twilio\.com/, this.prismUrl);
+    opts.uri = opts.uri.replace(/^https\:\/\/.*?\.twilio\.com/, this.url);
     return this.requestClient.request(opts);
   }
 }
-export default PrismClient;
+export default RequestClientWrapper;

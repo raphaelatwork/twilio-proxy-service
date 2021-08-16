@@ -1,6 +1,5 @@
 node_modules
-*/node_modules
 */.env
-*.vagrant/*
-*yarn.lock
-*package-lock.json
+*.vagrant/
+build
+dist
