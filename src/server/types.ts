@@ -6,6 +6,7 @@ export interface ITwilioAccountSecrets {
 
 export interface IServerSettings {
    endpointUrl: string;
+   envName: string;
 }
 
 export type TProxyConfigOptions = ITwilioAccountSecrets & IServerSettings;

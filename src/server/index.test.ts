@@ -14,6 +14,7 @@ describe('/account/:accountSid/createSubAccount.json', () => {
     };
     const res = await request.post(`/account/${dummyAccountSid}/subAccounts/createSubaccount.json`)
         .send(createSubaccountDetails)
+        .set('Content-Type', 'application/json')
         .set('Accept', 'application/json');
     expect(res.statusCode).toBe(201);
     expect(res.body).toHaveProperty('sid', expect.any(String));
@@ -28,10 +29,13 @@ describe('/account/:accountSid/createSubAccount.json', () => {
   it('should respond with 400', async () => {
     const dummyAccountSid = 'AC12341234123412341234123412341234';
     const createSubaccountDetails = {
+      friendlyName: 'dummySubaccount1',
     };
     const res = await request.post(`/account/${dummyAccountSid}/subAccounts/createSubaccount.json`)
         .send(createSubaccountDetails)
+        .set('Content-Type', 'application/json')
         .set('Accept', 'application/json');
+    expect(res.statusCode).not.toBe(201);
     expect(res.statusCode).toBe(400);
   });
 });

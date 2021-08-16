@@ -9,4 +9,5 @@ export const ConfigOptions: TProxyConfigOptions = {
   accountSid: process.env.TWILIO_ACCOUNT_SID || '',
   accountAuthToken: process.env.TWILIO_ACCOUNT_AUTH_TOKEN || '',
   endpointUrl: process.env.ENDPOINT_URL || '',
+  envName: process.env.ENV_NAME || '',
 };

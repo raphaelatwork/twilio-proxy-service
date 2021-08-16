@@ -27,12 +27,13 @@
     ],
     "requestBody": {
       "content": {
-        "application/x-www-form-urlencoded": {
+        "application/json": {
           "schema": {
             "$ref": "../schemas/CreateSubaccount.json"
           }
         }
-      }
+      },
+      "required": true
     }
   }
 }
