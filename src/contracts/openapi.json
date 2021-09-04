@@ -6,10 +6,10 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/account/{accountSid}/subAccounts.json": {
+    "/account/{accountSid}/subaccounts.json": {
       "$ref": "./paths/subaccounts.json"
     },
-    "/account/{accountSid}/subAccounts/createSubaccount.json": {
+    "/account/{accountSid}/subaccounts/createSubaccount.json": {
       "$ref": "./paths/createSubaccount.json"
     },
     "/account/{accountSid}/subaccounts/{subaccountSid}.json": {

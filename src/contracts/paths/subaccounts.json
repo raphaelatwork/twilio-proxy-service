@@ -15,6 +15,16 @@
             }
           }
         }
+      },
+      "default": {
+        "description": "Failed to fetch subaccounts.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../schemas/ErrorModel.json"
+            }
+          }
+        }
       }
     },
     "parameters": [
@@ -22,7 +32,7 @@
         "name": "accountSid",
         "in": "path",
         "required": true,
-        "description": "A parent account which may have an arbitraty number of subaccounts.",
+        "description": "A parent account which may have an arbitrary number of subaccounts.",
         "schema": {
           "type": "string"
         },

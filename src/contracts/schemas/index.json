@@ -4,5 +4,8 @@
   },
   "CreateSubaccount": {
     "$ref": "./CreateSubaccount.json"
+  },
+  "ErrorModel": {
+    "$ref": "./ErrorModel.json"
   }
 }

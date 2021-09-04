@@ -1,6 +1,6 @@
 // CreateSubaccount.ts
-interface CreateSubaccount {
+interface ICreateSubaccount {
   friendlyName: string,
   accountSid: string,
 };
-export default CreateSubaccount;
+export default ICreateSubaccount;

@@ -1,4 +1,4 @@
 {
   "ext": "ts",
-  "exec": "tsc && node dist/server/index.js"
+  "exec": "tsc && node --experimental-specifier-resolution=node dist/server/index.js"
 }

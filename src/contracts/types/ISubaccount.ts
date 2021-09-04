@@ -1,9 +1,9 @@
 // Subaccount.ts
-interface Subaccount {
+interface ISubaccount {
   sid: string,
   href: string,
   friendlyName: string,
   parentAccountSid: string,
-  dateTimeCreated: string,
+  dateCreated: string,
 };
-export default Subaccount;
+export default ISubaccount;

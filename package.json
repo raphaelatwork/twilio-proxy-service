@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node main",
     "lint": "eslint . --ext .ts,.json",
-    "test": "DOTENV_CONFIG_PATH=./test.env jest ./src",
+    "test": "DOTENV_CONFIG_PATH=./local.env jest ./src",
     "hot-reload": "nodemon",
     "build": "./build.sh"
   },
@@ -24,7 +24,6 @@
     "express-openapi-validator": "^4.12.15",
     "jest": "^27.0.6",
     "morgan": "^1.10.0",
-    "openapi-validator-middleware": "^3.2.2",
     "twilio": "^3.66.1"
   },
   "devDependencies": {

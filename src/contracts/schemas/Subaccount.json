@@ -13,7 +13,7 @@
     "parentAccountSid": {
       "type": "string"
     },
-    "dateTimeCreated": {
+    "dateCreated": {
       "type": "string",
       "format": "date-time"
     }
