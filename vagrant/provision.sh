@@ -22,3 +22,7 @@ yarn global add @stoplight/prism-cli
 
 #Add yarn binaries to PATH
 echo "PATH=\"$PATH:$(yarn global bin)\"" >> "$HOME/.bash_profile"
+
+#Clean install of dependencies
+rm -rf /project/node_modules
+npm --prefix /project install
