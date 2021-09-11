@@ -7,7 +7,7 @@ An OpenAPI defined proxy web service for communicating with the Twilio platform.
 With API development comes the risk of deploying a service that breaches the contract advertised to consumers. We describe our web service via the [OpenAPI 3.0 specification][openapi3] which takes the form of a JSON document that we can both advertise to consumers and develop against. We use this document in conjuction with [express-openapi-validator][openapimiddleware] and our testing framework [Jest][jest] to verify that the application adheres to API contract at every phase of the development process leading up to deployment.
 
 ##### A Portable Development Environment
-Irreproducible builds plague the development process. We use [Vagrant][vagrant] to provision a virtual machine with all the dependencies necessary to run and test the application. Further, we provide instructions on how to debug on said virtual machine using [VS Code][vscode], thus eliminating the need to run the application on your local machine.
+Irreproducible builds plague the development process. We use [Vagrant][vagrant] to provision a virtual machine with all the dependencies necessary to run and test the application. Further, we provide instructions on how to debug on said virtual machine using [VS Code][vscode], thus eliminating the need to build or run the application on your local machine.
 
 ## Getting Started
 ##### Requirements
