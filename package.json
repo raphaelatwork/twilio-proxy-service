@@ -8,7 +8,8 @@
     "lint": "eslint . --ext .ts,.json",
     "test": "DOTENV_CONFIG_PATH=./local.env jest ./src",
     "hot-reload": "nodemon",
-    "build": "./build.sh"
+    "build": "./build.sh",
+    "redoc": "./redoc_build.sh && http-server ./redoc"
   },
   "keywords": [
     "twilio",
@@ -24,6 +25,7 @@
     "express-openapi-validator": "^4.12.15",
     "jest": "^27.0.6",
     "morgan": "^1.10.0",
+    "redoc": "^2.0.0-rc.56",
     "twilio": "^3.66.1"
   },
   "devDependencies": {
@@ -42,7 +44,7 @@
     "swagger-cli": "^4.0.4",
     "ts-jest": "^27.0.4"
   },
-  "repository": "https://github.com/rosori01/Holly",
+  "repository": "https://github.com/",
   "private": true,
   "type": "module"
 }

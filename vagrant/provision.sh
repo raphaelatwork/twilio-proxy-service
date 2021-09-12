@@ -17,12 +17,15 @@ nvm install
 #Install Yarn 
 npm install -g yarn
 
-#Install Prism - Used to run mock server
+#Install http-server - Used to serve Redoc documentation
+yarn global add http-server
+
+#Install Prism - Used to run mock Twilio server
 yarn global add @stoplight/prism-cli
 
 #Add yarn binaries to PATH
 echo "PATH=\"$PATH:$(yarn global bin)\"" >> "$HOME/.bash_profile"
 
 #Clean install of dependencies
-rm -rf /project/node_modules
-npm --prefix /project install
+rm -rf /vagrant/node_modules
+npm --prefix /vagrant install
