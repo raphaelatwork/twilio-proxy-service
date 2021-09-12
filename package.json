@@ -4,7 +4,7 @@
   "description": "Proxy service to manipulate Twilio accounts and subaccounts",
   "main": "./dist/server/index.js",
   "scripts": {
-    "start": "node main",
+    "start": "node --experimental-specifier-resolution=node dist/server/index.js",
     "lint": "eslint . --ext .ts,.json",
     "test": "DOTENV_CONFIG_PATH=./local.env jest ./src",
     "hot-reload": "nodemon",
