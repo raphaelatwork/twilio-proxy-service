@@ -54,7 +54,9 @@ We've set up [Redoc][redoc] to process our service's OpenAPI definition to rende
 ```sh
 npm run redoc
 ```
-The command above kicks off an instance of [http-server][httpserver] from within the VM that we've configured to serve said web app.
+The command above kicks off an instance of [http-server][httpserver] from within the VM that we've configured to serve said web app. http-server is configured to serve at port 8080 by default on the localhost. Here's what you should see when accessing `http://192.168.33.10:8080` from the browser on your local machine after kicking the server off in the VM: 
+![redocwebapp]
+
 ##### Running Tests
 Running our test suite locally requires first running an instance of the [Twilio mock API server][prismmock] within the VM which you can do by running the following script from within the `/vagrant` directory of the VM: 
 ```sh
@@ -89,3 +91,4 @@ _TODO_
    [prismmock]: <https://www.twilio.com/docs/openapi/mock-api-generation-with-twilio-openapi-spec>
    [prismshell]: <https://raw.githubusercontent.com/raphaelatwork/twilio-proxy-service/main/readme_images/prismshell.png>
    [testsuiteshell]: <https://raw.githubusercontent.com/raphaelatwork/twilio-proxy-service/main/readme_images/test_suite_shell.png>
+   [redocwebapp]: <https://raw.githubusercontent.com/raphaelatwork/twilio-proxy-service/main/readme_images/redoc.png>
