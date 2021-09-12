@@ -1,6 +1,6 @@
 {
   "get": {
-    "description": "Returns all subaccounts pertaining to account provided",
+    "description": "Fetch Subaccounts By AccountSid",
     "responses": {
       "200": {
         "description": "A list of subaccounts",

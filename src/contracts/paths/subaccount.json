@@ -1,6 +1,6 @@
 {
   "get": {
-    "description": "Returns the subaccount corresponding to the accountSid and subaccountSid provided",
+    "description": "Fetch Subaccount by SubaccountSid",
     "responses": {
       "200": {
         "description": "Successfully returned subaccount",

@@ -1,6 +1,6 @@
 {
   "post": {
-    "description": "Returns a new subaccount under the account provided",
+    "description": "Create Subacccount under AccountSid",
     "responses": {
       "201": {
         "description": "Successfully created a new subaccount",
